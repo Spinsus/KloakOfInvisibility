@@ -49,7 +49,7 @@ struct ContentView: View {
             .background(Color(.systemGray6))
             .cornerRadius(12)
             
-            Text("To use: Share any photo and look for 'StripMetadata' in the share menu")
+            Text("To use: Share any photo and tap 'KloakOfInvisibility' in the share menu")
                 .font(.caption)
                 .foregroundColor(.secondary)
                 .padding(.horizontal)

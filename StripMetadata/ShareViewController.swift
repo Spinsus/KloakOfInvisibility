@@ -22,6 +22,20 @@ class ShareViewController: SLComposeServiceViewController {
         showInfoScreen()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        // Dismiss keyboard if it appears
+        self.view.endEditing(true)
+    }
+    
+    override func presentationAnimationDidFinish() {
+        super.presentationAnimationDidFinish()
+        
+        // Force dismiss keyboard after presentation
+        self.view.endEditing(true)
+    }
+    
     override func isContentValid() -> Bool {
         return true
     }
