@@ -6,9 +6,48 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D98249662E384D98006E65B1 /* StripMetadata.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D982495C2E384D98006E65B1 /* StripMetadata.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D98249642E384D98006E65B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D98249422E384D6A006E65B1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D982495B2E384D98006E65B1;
+			remoteInfo = StripMetadata;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D982496B2E384D98006E65B1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D98249662E384D98006E65B1 /* StripMetadata.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		D982494A2E384D6A006E65B1 /* KloakOfInvisibility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KloakOfInvisibility.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D982495C2E384D98006E65B1 /* StripMetadata.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = StripMetadata.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		D98249672E384D98006E65B1 /* Exceptions for "StripMetadata" folder in "StripMetadata" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = D982495B2E384D98006E65B1 /* StripMetadata */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		D982494C2E384D6A006E65B1 /* KloakOfInvisibility */ = {
@@ -16,10 +55,25 @@
 			path = KloakOfInvisibility;
 			sourceTree = "<group>";
 		};
+		D982495D2E384D98006E65B1 /* StripMetadata */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				D98249672E384D98006E65B1 /* Exceptions for "StripMetadata" folder in "StripMetadata" target */,
+			);
+			path = StripMetadata;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D98249472E384D6A006E65B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D98249592E384D98006E65B1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				D982494C2E384D6A006E65B1 /* KloakOfInvisibility */,
+				D982495D2E384D98006E65B1 /* StripMetadata */,
 				D982494B2E384D6A006E65B1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				D982494A2E384D6A006E65B1 /* KloakOfInvisibility.app */,
+				D982495C2E384D98006E65B1 /* StripMetadata.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,10 +111,12 @@
 				D98249462E384D6A006E65B1 /* Sources */,
 				D98249472E384D6A006E65B1 /* Frameworks */,
 				D98249482E384D6A006E65B1 /* Resources */,
+				D982496B2E384D98006E65B1 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D98249652E384D98006E65B1 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				D982494C2E384D6A006E65B1 /* KloakOfInvisibility */,
@@ -69,6 +127,28 @@
 			productName = KloakOfInvisibility;
 			productReference = D982494A2E384D6A006E65B1 /* KloakOfInvisibility.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D982495B2E384D98006E65B1 /* StripMetadata */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D98249682E384D98006E65B1 /* Build configuration list for PBXNativeTarget "StripMetadata" */;
+			buildPhases = (
+				D98249582E384D98006E65B1 /* Sources */,
+				D98249592E384D98006E65B1 /* Frameworks */,
+				D982495A2E384D98006E65B1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				D982495D2E384D98006E65B1 /* StripMetadata */,
+			);
+			name = StripMetadata;
+			packageProductDependencies = (
+			);
+			productName = StripMetadata;
+			productReference = D982495C2E384D98006E65B1 /* StripMetadata.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -81,6 +161,9 @@
 				LastUpgradeCheck = 1640;
 				TargetAttributes = {
 					D98249492E384D6A006E65B1 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					D982495B2E384D98006E65B1 = {
 						CreatedOnToolsVersion = 16.4;
 					};
 				};
@@ -100,12 +183,20 @@
 			projectRoot = "";
 			targets = (
 				D98249492E384D6A006E65B1 /* KloakOfInvisibility */,
+				D982495B2E384D98006E65B1 /* StripMetadata */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D98249482E384D6A006E65B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D982495A2E384D98006E65B1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +213,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D98249582E384D98006E65B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D98249652E384D98006E65B1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D982495B2E384D98006E65B1 /* StripMetadata */;
+			targetProxy = D98249642E384D98006E65B1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D98249532E384D6B006E65B1 /* Debug */ = {
@@ -256,6 +362,8 @@
 				DEVELOPMENT_TEAM = S36L9JGF29;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "StripMetadata saves clean copies with all metadata removed to protect your privacy.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "StripMetadata needs access to save metadata-free copies of your photos. Your original photos are never modified.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -284,6 +392,8 @@
 				DEVELOPMENT_TEAM = S36L9JGF29;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "StripMetadata saves clean copies with all metadata removed to protect your privacy.";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "StripMetadata needs access to save metadata-free copies of your photos. Your original photos are never modified.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -296,6 +406,56 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = spinsus.KloakOfInvisibility;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D98249692E384D98006E65B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S36L9JGF29;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StripMetadata/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StripMetadata;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = spinsus.KloakOfInvisibility.StripMetadata;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D982496A2E384D98006E65B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = S36L9JGF29;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StripMetadata/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = StripMetadata;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = spinsus.KloakOfInvisibility.StripMetadata;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -319,6 +479,15 @@
 			buildConfigurations = (
 				D98249562E384D6B006E65B1 /* Debug */,
 				D98249572E384D6B006E65B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D98249682E384D98006E65B1 /* Build configuration list for PBXNativeTarget "StripMetadata" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D98249692E384D98006E65B1 /* Debug */,
+				D982496A2E384D98006E65B1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
